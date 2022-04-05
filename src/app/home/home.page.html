@@ -16,5 +16,14 @@
   <div id="container">
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-button routerLink="/contact" color="medium">Ir a Pagina Contacto</ion-button>
+    <ion-button routerLink="/pagina2" color="medium">Ir a Pagina2</ion-button>
+    <ion-title  *ngIf="cantAlumnos> 15" >Somos muchos</ion-title>
+    <ion-title *ngIf="cantAlumnos< 15"   >Somos poco</ion-title>
+
+
+    <ion-title *ngFor="let a of [1,2,3]">Hola!!</ion-title>
+    <ion-title *ngFor="let post of posts">{{post.nombre}}</ion-title>
+    
   </div>
 </ion-content>
